@@ -3,6 +3,7 @@ import Home from "./components/Home";
 import Nav from "./components/Nav";
 
 import './App.css';
+import ShowDeliveries from "./components/ShowDeliveries";
 
 function App() {
   return (
@@ -14,6 +15,9 @@ function App() {
       <Switch>
         <Route exact path="/">
           <Home />
+        </Route>
+        <Route path="/show-deliveries">
+          <ShowDeliveries />
         </Route>
       </Switch>
     </div>
