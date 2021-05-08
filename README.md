@@ -29,3 +29,8 @@ As an employee of Taco Loco I am:
 - I am able to look up all deliveries that are stored in the database
 - I can update customer info if needed
 - I can delete a delivery
+
+## Questions
+- Should we create a single route app so all tools and data are in one place for the user?
+or should be have multiple routes for page simplifications and organization?
+- Should we exclude Redux?  

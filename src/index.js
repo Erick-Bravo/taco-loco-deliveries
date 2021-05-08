@@ -1,12 +1,22 @@
 import React from 'react';
+// import { Provider } from "react-redux";
+import { BrowserRouter } from "react-router-dom";
 import ReactDOM from 'react-dom';
-import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import './index.css';
+
+const Root = () => {
+  return(
+    <BrowserRouter>
+      <App />    
+    </BrowserRouter>
+  );
+};
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Root />
   </React.StrictMode>,
   document.getElementById('root')
 );
