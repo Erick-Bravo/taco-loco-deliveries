@@ -17,7 +17,8 @@
     background-color: #C3073F;
     /* border: 10px solid #6F2232; */
     border-radius: 15px;
-    width: 600px;
+    width: 100%;
+    max-width: 1000px;
     height: 100%;
     margin-bottom: 20px;
 }

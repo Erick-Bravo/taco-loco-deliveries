@@ -9,7 +9,8 @@ function App() {
     <div className="App">
 
       <p>Welcome to the Taco Loco Delivery App</p>
-      
+      <Nav />
+
       <Switch>
         <Route exact path="/">
           <Home />

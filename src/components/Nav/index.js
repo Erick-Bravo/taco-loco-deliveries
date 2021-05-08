@@ -1,10 +1,12 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 import "./index.css"
 
 const Nav = () => {
     return (
         <div id="nav">
-            <p>Welcome to the Nav component</p>
+            <NavLink to="/add-customer-form">Add Customer</NavLink>
+            <NavLink to="/show-deliveries">Show Deliveries</NavLink>
         </div>
     );
 };
