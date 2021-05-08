@@ -8,8 +8,8 @@ function App() {
   return (
     <div className="App">
 
-      <Nav />
-
+      <p>Welcome to the Taco Loco Delivery App</p>
+      
       <Switch>
         <Route exact path="/">
           <Home />

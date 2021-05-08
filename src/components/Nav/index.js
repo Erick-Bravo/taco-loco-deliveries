@@ -3,7 +3,7 @@ import "./index.css"
 
 const Nav = () => {
     return (
-        <div id="home">
+        <div id="nav">
             <p>Welcome to the Nav component</p>
         </div>
     );

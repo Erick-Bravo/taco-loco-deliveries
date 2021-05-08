@@ -3,8 +3,9 @@ import "./index.css"
 
 const Home = () => {
     return (
-        <div id="home">
-            <p>Welcome to the Home component</p>
+        <div id="main">
+            <p className="logo-taco">Taco</p>
+            <p className="logo-loco">Loco</p>
         </div>
     );
 };

@@ -1,0 +1,4 @@
+Blackish -  #1A1A1D
+Cherry -    #C3073F
+Pom -       #950740
+Red Shlew - #6F2232
