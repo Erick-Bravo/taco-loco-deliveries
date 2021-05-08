@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
-import "./index.css"
+import DeliveryCard from "../DeliveryCard"
+import "./index.css";
 
 const ShowDeliveries = () => {
 
@@ -20,7 +21,7 @@ const ShowDeliveries = () => {
             <div id="deliveries">
                 <h1>Deliveries</h1>
                 {deliveries && deliveries.map((customer) => {
-                    return <p>{customer.firstName}</p>
+                    return <DeliveryCard customer={customer} key={customer.id} />
                 })}
             </div>
         </div>
