@@ -40,12 +40,12 @@ or should we have multiple routes for page simplifications and organization?
 ## Dev Notes:
 - This project took me about 14 - 16 hours from 
 the moment of repo creation in github.
-- It was the first time I had used a json-server so <br/>
-naturally, time was allocated in learning how to create a json-server and <br/>
+- It was the first time I had used a json-server so 
+naturally, time was allocated in learning how to create a json-server and 
 how to interact with its api.
-- The time does not include TDD. My strategy for this project was <br/>
-to learn json-server then implement what I knew first, just in case I could not <br/>
+- The time does not include TDD. My strategy for this project was 
+to learn json-server then implement what I knew first, just in case I could not 
 get to TDD.
-- Test should absolutely be written alongside development, however <br/>
+- Test should absolutely be written alongside development, however
 TDD in react was something I was also unfamiliar with.
 - Even after this project is submitted, I will be researching and implementing <br/>TDD to further my skills as a developer. 
