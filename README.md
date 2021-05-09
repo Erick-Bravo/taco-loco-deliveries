@@ -1,27 +1,29 @@
 # taco-loco-deliveries
 
+## To Run The App
 
-## Available Scripts
+To run the app, please do the following:\
 
-In the project directory, you can run:
+run in command line\
+- npm install
+- npm start
 
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Dependencies
+- @testing-library/jest-dom ^5.12.0
+- @testing-library/react ^11.2.6
+- @testing-library/user-event ^12.8.3
+- normalize.css ^8.0.1
+- react ^17.0.2
+- react-dom ^17.0.2
+- react-router-dom ^5.2.0
+- react-scripts 4.0.3
+- web-vitals ^1.1.2
 
 ## taco-loco-api
-for this project, I have create a simple api using the json-server package.
-This api is hosted to heroku at https://taco-loco-api.herokuapp.com
-It contains only 4 cutomers with id, firstName, lastName, and address in JSON format.
+For this project, I have create a seperate api using the json-server package./
+This api is hosted to heroku at https://taco-loco-api.herokuapp.com/
+It contains only 3 cutomers with id, firstName, lastName, and address in/
+JSON format.
 
 ## User Stories
 As an employee of Taco Loco I am:
@@ -32,5 +34,18 @@ As an employee of Taco Loco I am:
 
 ## Questions
 - Should we create a single route app so all tools and data are in one place for the user?
-or should be have multiple routes for page simplifications and organization?
+or should we have multiple routes for page simplifications and organization?
 - Should we exclude Redux?  
+
+## Dev Notes:
+- This project took me about 14 - 16 hours from/
+the moment of repo creation in github.
+- It was the first time I had used a json-server so/
+naturally, time was allocated in learning how to create a json-server and/
+how to interact with its api.
+- The time does not include TDD. My strategy for this project was/
+to learn json-server then implement what I knew first, just in case I could not/
+get to TDD.
+- Test should absolutely be written alongside development, however/
+TDD in react was something I was also unfamiliar with.
+- Even after this project is submitted, I will be researching and implementing/ TDD to further my skills as a developer. 
