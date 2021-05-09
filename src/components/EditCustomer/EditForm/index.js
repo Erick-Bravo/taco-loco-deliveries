@@ -1,14 +1,14 @@
 import React, { useState, useEffect } from "react";
 import { useHistory } from "react-router";
-import "./index.css";
 
-const AddCustomer = () => {
+
+const EditForm = ({customer}) => {
 
     const history = useHistory();
 
-    const [firstName, setFirstName] = useState("");
-    const [lastName, setLastName] = useState("");
-    const [address, setAddress] = useState("");
+    const [firstName, setFirstName] = useState(customer.firstName);
+    const [lastName, setLastName] = useState(customer.lastName);
+    const [address, setAddress] = useState(customer.address);
     const [errors, setErrors] = useState([]);
     const [hidden, setHidden] = useState(true)
 
@@ -25,8 +25,8 @@ const AddCustomer = () => {
     const onSubmit = async (e) => {
         e.preventDefault()
 
-        await fetch("https://taco-loco-api.herokuapp.com/customers", {
-            method: "POST",
+        await fetch(`https://taco-loco-api.herokuapp.com/customers/${customer.id}`, {
+            method: "PUT",
             headers: {
                 "Content-Type": "application/json"
             },
@@ -41,9 +41,9 @@ const AddCustomer = () => {
     };
 
     return (
-        <div id="main">
+        <>
             <form className="form" onSubmit={onSubmit}>
-                <h1>Add Customer Form</h1>
+                <h1>Edit Customer Form</h1>
 
                 <ul>
                     {errors.map(error => (
@@ -54,20 +54,20 @@ const AddCustomer = () => {
                 <input type="text" name="firstName" value={firstName}
                     placeholder="First Name"
                     onChange={e => setFirstName(e.target.value)} />
-               
+
                 <input type="text" name="lastName" value={lastName}
                     placeholder="Last Name"
                     onChange={e => setLastName(e.target.value)} />
-    
+
                 <input type="text" name="address" value={address}
                     placeholder="Address"
                     onChange={e => setAddress(e.target.value)} />
-                
+
                 <button hidden={hidden}>Add Customer</button>
 
             </form>
-        </div>
+        </>
     );
 };
 
-export default AddCustomer;
+export default EditForm;
