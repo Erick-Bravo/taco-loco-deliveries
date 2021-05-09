@@ -22,7 +22,7 @@ const DeliveryCard = ({ customer }) => {
                 <h2>Address: {customer.address}</h2>
             </div>
             <div className="right">
-                <NavLink className="small-buttons" to={`/customer/${customer.id}/edit`}>Edit</NavLink>
+                <NavLink className="small-buttons" to={`/edit-customer/${customer.id}`}>Edit</NavLink>
                 <button className="small-buttons" onClick={deleteDelivery}>Delete</button>
             </div>
         </div>

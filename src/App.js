@@ -5,6 +5,7 @@ import ShowDeliveries from "./components/ShowDeliveries";
 import AddCustomer from "./components/AddCustomer";
 
 import './App.css';
+import EditCustomer from "./components/EditCustomer";
 
 function App() {
   return (
@@ -23,6 +24,13 @@ function App() {
         <Route path="/add-customer-form">
           <AddCustomer />
         </Route>
+        <Route path="/edit-customer/:customerId">
+          <EditCustomer />
+        </Route>
+        <Route path="*">
+          <p>404 not found</p>
+        </Route>
+
       </Switch>
     </div>
   );

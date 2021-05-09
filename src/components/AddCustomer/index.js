@@ -32,8 +32,6 @@ const AddCustomer = () => {
             body: JSON.stringify({ firstName, lastName, address })
         });
 
-        // const data = await response.json()
-
         setFirstName("");
         setLastName("");
         setAddress("");
