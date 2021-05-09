@@ -2,9 +2,9 @@
 
 ## To Run The App
 
-To run the app, please do the following:\
+To run the app, please do the following:
 
-run in command line\
+run in command line
 - npm install
 - npm start
 
@@ -20,9 +20,9 @@ run in command line\
 - web-vitals ^1.1.2
 
 ## taco-loco-api
-For this project, I have create a seperate api using the json-server package./
+For this project, I have create a seperate api using the json-server package. <br/>
 This api is hosted to heroku at https://taco-loco-api.herokuapp.com/
-It contains only 3 cutomers with id, firstName, lastName, and address in/
+It contains only 3 cutomers with id, firstName, lastName, and address in <br/>
 JSON format.
 
 ## User Stories
@@ -38,14 +38,14 @@ or should we have multiple routes for page simplifications and organization?
 - Should we exclude Redux?  
 
 ## Dev Notes:
-- This project took me about 14 - 16 hours from/
+- This project took me about 14 - 16 hours from <br/>
 the moment of repo creation in github.
-- It was the first time I had used a json-server so/
-naturally, time was allocated in learning how to create a json-server and/
+- It was the first time I had used a json-server so <br/>
+naturally, time was allocated in learning how to create a json-server and <br/>
 how to interact with its api.
-- The time does not include TDD. My strategy for this project was/
-to learn json-server then implement what I knew first, just in case I could not/
+- The time does not include TDD. My strategy for this project was <br/>
+to learn json-server then implement what I knew first, just in case I could not <br/>
 get to TDD.
-- Test should absolutely be written alongside development, however/
+- Test should absolutely be written alongside development, however <br/>
 TDD in react was something I was also unfamiliar with.
-- Even after this project is submitted, I will be researching and implementing/ TDD to further my skills as a developer. 
+- Even after this project is submitted, I will be researching and implementing <br/>TDD to further my skills as a developer. 
