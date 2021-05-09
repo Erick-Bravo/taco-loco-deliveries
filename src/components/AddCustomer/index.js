@@ -24,20 +24,28 @@ const AddCustomer = () => {
     const onSubmit = async (e) => {
         e.preventDefault()
 
-        const formData = {
-            firstName,
-            lastName,
-            address,
-        };
+        const response = await fetch("https://taco-loco-api.herokuapp.com/customers", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({ firstName, lastName, address })
+        });
+
+        const data = await response.json()
+
+        await console.log(data)
 
         setFirstName("");
         setLastName("");
         setAddress("");
+
+        history.push("/show-deliveries")
     };
 
     return (
         <div id="main">
-            <form className="form">
+            <form className="form" onSubmit={onSubmit}>
                 <h1>Add Customer Form</h1>
 
                 <ul>
