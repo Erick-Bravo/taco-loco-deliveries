@@ -21,7 +21,7 @@ const ShowDeliveries = () => {
             <div id="deliveries">
                 <h1>Deliveries</h1>
                 {deliveries && deliveries.map((customer) => {
-                    return <DeliveryCard customer={customer} key={customer.id} />
+                    return <DeliveryCard customer={customer} key={`${customer.firstName}${customer.lastName}`} /> // I usually use the id as key, but our json-server api does not auto increment id creation.
                 })}
             </div>
         </div>
