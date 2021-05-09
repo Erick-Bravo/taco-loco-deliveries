@@ -4,6 +4,7 @@ import { BrowserRouter } from "react-router-dom";
 import ReactDOM from 'react-dom';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import "normalize.css"; 
 import './index.css';
 
 const Root = () => {

@@ -24,7 +24,7 @@ const AddCustomer = () => {
     const onSubmit = async (e) => {
         e.preventDefault()
 
-        const response = await fetch("https://taco-loco-api.herokuapp.com/customers", {
+        await fetch("https://taco-loco-api.herokuapp.com/customers", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
@@ -32,9 +32,7 @@ const AddCustomer = () => {
             body: JSON.stringify({ firstName, lastName, address })
         });
 
-        const data = await response.json()
-
-        await console.log(data)
+        // const data = await response.json()
 
         setFirstName("");
         setLastName("");
@@ -54,24 +52,18 @@ const AddCustomer = () => {
                     ))}
                 </ul>
 
-                <label>
-                    First Name:
                 <input type="text" name="firstName" value={firstName}
-                        onChange={e => setFirstName(e.target.value)} />
-                </label>
-
-                <label>
-                    Last Name:
+                    placeholder="First Name"
+                    onChange={e => setFirstName(e.target.value)} />
+               
                 <input type="text" name="lastName" value={lastName}
-                        onChange={e => setLastName(e.target.value)} />
-                </label>
-
-                <label>
-                    Address:
+                    placeholder="Last Name"
+                    onChange={e => setLastName(e.target.value)} />
+    
                 <input type="text" name="address" value={address}
-                        onChange={e => setAddress(e.target.value)} />
-                </label>
-
+                    placeholder="Address"
+                    onChange={e => setAddress(e.target.value)} />
+                
                 <button hidden={hidden}>Add Customer</button>
 
             </form>

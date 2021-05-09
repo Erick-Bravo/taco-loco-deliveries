@@ -4,9 +4,15 @@ import { NavLink } from "react-router-dom";
 import "./index.css"
 const DeliveryCard = ({ customer }) => {
 
-    const deleteCustomer = (e) => {
+    const deleteDelivery = async (e) => {
         e.preventDefault();
-        console.log("Delete function")
+        await fetch(`https://taco-loco-api.herokuapp.com/customers/${customer.id}`, {
+            method: "DELETE",
+            headers: {
+                "Content-Type": "application/json"
+            }
+        });
+        window.location.reload();
     };
 
     return (
@@ -17,7 +23,7 @@ const DeliveryCard = ({ customer }) => {
             </div>
             <div className="right">
                 <NavLink className="small-buttons" to={`/customer/${customer.id}/edit`}>Edit</NavLink>
-                <button className="small-buttons" onClick={deleteCustomer}>Delete</button>
+                <button className="small-buttons" onClick={deleteDelivery}>Delete</button>
             </div>
         </div>
     );
