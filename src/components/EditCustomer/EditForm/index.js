@@ -22,7 +22,7 @@ const EditForm = ({customer}) => {
         setErrors(errors);
     }, [firstName, lastName, address]);
 
-    const onSubmit = async (e) => {
+    const editCustomer = async (e) => {
         e.preventDefault()
 
         await fetch(`https://taco-loco-api.herokuapp.com/customers/${customer.id}`, {
@@ -42,7 +42,7 @@ const EditForm = ({customer}) => {
 
     return (
         <>
-            <form className="form" onSubmit={onSubmit}>
+            <form className="form" onSubmit={editCustomer}>
                 <h1>Edit Customer Form</h1>
 
                 <ul>

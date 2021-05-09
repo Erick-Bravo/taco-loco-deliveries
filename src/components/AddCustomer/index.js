@@ -22,7 +22,9 @@ const AddCustomer = () => {
         setErrors(errors);
     }, [firstName, lastName, address]);
 
-    const onSubmit = async (e) => {
+
+    
+    const addCustomer = async (e) => {
         e.preventDefault()
 
         await fetch("https://taco-loco-api.herokuapp.com/customers", {
@@ -42,7 +44,7 @@ const AddCustomer = () => {
 
     return (
         <div id="main">
-            <form className="form" onSubmit={onSubmit}>
+            <form className="form" onSubmit={addCustomer}>
                 <h1>Add Customer Form</h1>
 
                 <ul>
