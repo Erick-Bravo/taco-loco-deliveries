@@ -22,7 +22,7 @@ run in command line
 ## taco-loco-api
 For this project, I have create a seperate api using the json-server package. <br/>
 This api is hosted to heroku at https://taco-loco-api.herokuapp.com/
-It contains only 3 cutomers with id, firstName, lastName, and address in <br/>
+It contains only 3 cutomers with id, firstName, lastName, and address in
 JSON format.
 
 ## User Stories
@@ -38,7 +38,7 @@ or should we have multiple routes for page simplifications and organization?
 - Should we exclude Redux?  
 
 ## Dev Notes:
-- This project took me about 14 - 16 hours from <br/>
+- This project took me about 14 - 16 hours from 
 the moment of repo creation in github.
 - It was the first time I had used a json-server so <br/>
 naturally, time was allocated in learning how to create a json-server and <br/>
