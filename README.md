@@ -25,6 +25,8 @@ This api is hosted to heroku at https://taco-loco-api.herokuapp.com/
 It contains only 3 cutomers with id, firstName, lastName, and address in
 JSON format.
 
+json-server documentation https://github.com/typicode/json-server
+
 ## User Stories
 As an employee of Taco Loco I am:
 - I am able to add a new delivery with customers name and address
