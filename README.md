@@ -20,8 +20,8 @@ run in command line
 - web-vitals ^1.1.2
 
 ## taco-loco-api
-For this project, I have create a seperate api using the json-server package. <br/>
-This api is hosted to heroku at https://taco-loco-api.herokuapp.com/
+For this project, I have create a separate api using the json-server package. <br/>
+This api is hosted on heroku at https://taco-loco-api.herokuapp.com/
 It contains only 3 cutomers with id, firstName, lastName, and address in
 JSON format.
 
